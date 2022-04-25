@@ -1,0 +1,12 @@
+server {
+    listen 80;
+    root /var/www/64.225.72.77/html/app1;
+}
+server {
+    listen 7777;
+    root /var/www/64.225.72.77/html/app1;
+
+    location /docs {
+        alias /var/www/64.225.72.77/html/app2;
+    }
+}
